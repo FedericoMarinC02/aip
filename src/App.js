@@ -12,7 +12,7 @@ import mysqlLogo from './imgs/Mysql.webp';
 import workbenchLogo from './imgs/mysql workbench.png';
 import workbenchFit from './imgs/workbench-fit.png';
 import phpMyAdminLogo from './imgs/PhpMyAdmin.png';
-import apacheLogo from './imgs/apahe.png';
+import apacheLogo from './imgs/apache.png';
 
 const quickStats = [
   { icon: 'users', value: 'Multiacceso', label: 'usuarios y visitantes' },
