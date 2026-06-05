@@ -21,7 +21,7 @@ const quickStats = [
 
 const objectives = [
   'Administrar usuarios y roles.',
-  'Validar identidad con varios metodos.',
+  'Validar identidad con varios métodos.',
   'Registrar entradas y salidas en tiempo real.',
   'Controlar visitantes y permisos.',
   'Generar reportes visuales.',
@@ -32,7 +32,7 @@ const technologies = [
   {
     icon: 'server',
     title: 'Backend',
-    description: 'Logica, seguridad y servicios del sistema.',
+    description: 'Lógica, seguridad y servicios del sistema.',
     items: [
       { label: 'Laravel MVC', logo: laravelLogo, alt: 'Laravel' },
       { label: 'PHP 8.x', logo: phpLogo, alt: 'PHP' },
@@ -53,7 +53,7 @@ const technologies = [
   {
     icon: 'database',
     title: 'Datos e Infraestructura',
-    description: 'Base de datos, administracion y servidor web.',
+    description: 'Base de datos, administración y servidor web.',
     items: [
       { label: 'MySQL 8', logo: mysqlLogo, alt: 'MySQL' },
       { label: 'MySQL Workbench', logo: workbenchLogo, alt: 'MySQL Workbench' },
@@ -86,12 +86,12 @@ const architecture = [
   },
   {
     icon: 'plug',
-    title: 'Integracion',
-    text: 'Conecta QR, biometria y torniquetes.',
+    title: 'Integración',
+    text: 'Conecta QR, biometría y torniquetes.',
   },
   {
     icon: 'sync',
-    title: 'Centralizacion',
+    title: 'Centralización',
     text: 'Unifica registros y seguimiento.',
   },
 ];
@@ -99,13 +99,13 @@ const architecture = [
 const modules = [
   {
     icon: 'id',
-    title: 'Gestion de Usuarios',
+    title: 'Gestión de Usuarios',
     text: 'Datos, roles y estados de acceso.',
   },
   {
     icon: 'fingerprint',
-    title: 'Autenticacion',
-    text: 'Validacion por huella, QR, carne o PIN.',
+    title: 'Autenticación',
+    text: 'Validación por huella, QR, carné o PIN.',
   },
   {
     icon: 'gate',
@@ -114,7 +114,7 @@ const modules = [
   },
   {
     icon: 'visitor',
-    title: 'Gestion de Visitantes',
+    title: 'Gestión de Visitantes',
     text: 'Permisos temporales y seguimiento externo.',
   },
   {
@@ -124,12 +124,12 @@ const modules = [
   },
   {
     icon: 'chart',
-    title: 'Reportes y Estadisticas',
-    text: 'Graficos e indicadores para analizar el flujo.',
+    title: 'Reportes y Estadísticas',
+    text: 'Gráficos e indicadores para analizar el flujo.',
   },
   {
     icon: 'shield',
-    title: 'Auditoria',
+    title: 'Auditoría',
     text: 'Historial de acciones y evidencias.',
   },
 ];
@@ -145,11 +145,11 @@ const databaseTables = [
   },
   {
     name: 'accesos',
-    fields: 'Fecha, hora, metodo y resultado.',
+    fields: 'Fecha, hora, método y resultado.',
   },
   {
     name: 'visitantes',
-    fields: 'Permisos, motivo y autorizacion.',
+    fields: 'Permisos, motivo y autorización.',
   },
   {
     name: 'dispositivos',
@@ -165,7 +165,7 @@ const databaseTables = [
   },
   {
     name: 'configuraciones',
-    fields: 'Parametros y reglas del sistema.',
+    fields: 'Parámetros y reglas del sistema.',
   },
 ];
 
@@ -179,27 +179,27 @@ const requirements = {
     'Consultar historiales.',
   ],
   noFuncionales: [
-    'Respuesta rapida.',
+    'Respuesta rápida.',
     'Alta disponibilidad.',
     'Interfaz responsiva.',
-    'Proteccion de datos.',
+    'Protección de datos.',
   ],
 };
 
 const reports = [
   'Ingresos y salidas.',
-  'Distribucion por tipo de usuario.',
+  'Distribución por tipo de usuario.',
   'Horarios de mayor flujo.',
   'Intentos fallidos.',
-  'Ocupacion en tiempo real.',
+  'Ocupación en tiempo real.',
   'Tendencias mensuales y anuales.',
 ];
 
 const futureImprovements = [
   'Reconocimiento facial.',
-  'Aplicacion movil.',
+  'Aplicación móvil.',
   'Notificaciones avanzadas.',
-  'Analitica predictiva.',
+  'Analítica predictiva.',
   'Nuevas integraciones institucionales.',
 ];
 
@@ -275,12 +275,12 @@ function App() {
             <SenaLogo />
             <h2>Automatizacion de Ingreso Peatonal</h2>
             <p className="hero-text">
-              Control de ingreso para el SENA Regional Caldas con autenticacion segura,
-              registro automatico y trazabilidad.
+              Control de ingreso para el SENA Regional Caldas con autenticación segura,
+              registro automático y trazabilidad.
             </p>
             <div className="hero-support">
               <ul className="hero-points">
-                <li>Ingreso mas rapido.</li>
+                <li>Ingreso más rápido.</li>
                 <li>Registros consultables.</li>
                 <li>Base para reportes e integraciones.</li>
               </ul>
@@ -301,8 +301,8 @@ function App() {
               <h3>Acceso seguro y centralizado</h3>
               <ul>
                 <li>Usuarios, personal y visitantes.</li>
-                <li>Biometria, QR y torniquetes.</li>
-                <li>Historial para consulta y auditoria.</li>
+                <li>Biometría, QR y torniquetes.</li>
+                <li>Historial para consulta y auditoría.</li>
               </ul>
             </article>
             <article className="mini-card indicators-card hero-summary-card">
@@ -332,10 +332,10 @@ function App() {
                   <div className="icon-badge small">
                     <Icon name="shield" />
                   </div>
-                  <h3>Proposito</h3>
+                  <h3>Propósito</h3>
                 </div>
                 <p>
-                  Validacion segura, registro automatico y seguimiento institucional.
+                  Validación segura, registro automático y seguimiento institucional.
                 </p>
               </article>
               <article className="mini-card">
@@ -357,9 +357,9 @@ function App() {
     {
       id: 'objetivo',
       label: 'Objetivo',
-      eyebrow: 'Vision del proyecto',
-      title: 'Descripcion general y objetivo',
-      subtitle: 'Plataforma web para automatizar el ingreso peatonal y apoyar la gestion institucional.',
+      eyebrow: 'Visión del proyecto',
+      title: 'Descripción general y objetivo',
+      subtitle: 'Plataforma web para automatizar el ingreso peatonal y apoyar la gestión institucional.',
       content: (
         <div className="objective-slide slide-stack objective-intro-slide">
           <div className="objective-main slide-enter">
@@ -371,8 +371,8 @@ function App() {
                 <h3>Objetivo general</h3>
               </div>
               <p>
-                Automatizar el ingreso peatonal con informacion clara para seguridad y
-                administracion.
+                Automatizar el ingreso peatonal con información clara para seguridad y
+                administración.
               </p>
             </article>
             <div className="objective-highlights">
@@ -381,7 +381,7 @@ function App() {
                   <div className="icon-badge small">
                     <Icon name="scan" />
                   </div>
-                  <h3>Operacion en tiempo real</h3>
+                  <h3>Operación en tiempo real</h3>
                 </div>
                 <p>Registrar accesos y validar identidades al instante.</p>
               </article>
@@ -390,9 +390,9 @@ function App() {
                   <div className="icon-badge small">
                     <Icon name="chart" />
                   </div>
-                  <h3>Valor para la gestion</h3>
+                  <h3>Valor para la gestión</h3>
                 </div>
-                <p>Convertir registros en indicadores utiles.</p>
+                <p>Convertir registros en indicadores útiles.</p>
               </article>
             </div>
           </div>
@@ -411,9 +411,9 @@ function App() {
                 <div className="icon-badge small">
                   <Icon name="plug" />
                 </div>
-                <h3>Integracion</h3>
+                <h3>Integración</h3>
               </div>
-              <p>Biometria, torniquetes y QR.</p>
+              <p>Biometría, torniquetes y QR.</p>
             </article>
             <article className="mini-card">
               <div className="card-heading">
@@ -422,7 +422,7 @@ function App() {
                 </div>
                 <h3>Cumplimiento</h3>
               </div>
-              <p>Seguridad y proteccion de datos.</p>
+              <p>Seguridad y protección de datos.</p>
             </article>
           </div>
         </div>
@@ -431,9 +431,9 @@ function App() {
     {
       id: 'objetivos-especificos',
       label: 'Objetivos',
-      eyebrow: 'Vision del proyecto',
-      title: 'Objetivos especificos',
-      subtitle: 'Acciones concretas que guian el desarrollo del sistema A.I.P.',
+      eyebrow: 'Visión del proyecto',
+      title: 'Objetivos específicos',
+      subtitle: 'Acciones concretas que guían el desarrollo del sistema A.I.P.',
       content: (
         <div className="objective-detail-slide slide-stack focused-slide">
           <article className="glass-card objective-side slide-enter">
@@ -453,7 +453,7 @@ function App() {
                 </ul>
               </div>
               <div className="objective-group">
-                <h4>Analitica y seguridad</h4>
+                <h4>Analítica y seguridad</h4>
                 <ul className="feature-list objective-list">
                   {objectives.slice(4).map((item) => (
                     <li key={item}>{item}</li>
@@ -468,9 +468,9 @@ function App() {
     {
       id: 'tecnologias',
       label: 'Tecnologias',
-      eyebrow: 'Stack tecnologico',
-      title: 'Tecnologias utilizadas',
-      subtitle: 'Herramientas seleccionadas para construir una solucion web escalable, segura e interactiva.',
+      eyebrow: 'Stack tecnológico',
+      title: 'Tecnologías utilizadas',
+      subtitle: 'Herramientas seleccionadas para construir una solución web escalable, segura e interactiva.',
       content: (
         <div className="tech-slide slide-stack">
           <section className="tech-overview slide-enter">
@@ -483,7 +483,7 @@ function App() {
                   <h3>Panorama del stack</h3>
                 </div>
                 <p>
-                  La solucion se divide en backend, frontend y datos para una arquitectura
+                  La solución se divide en backend, frontend y datos para una arquitectura
                   clara y escalable.
                 </p>
               </div>
@@ -525,9 +525,9 @@ function App() {
     {
       id: 'arquitectura',
       label: 'Arquitectura',
-      eyebrow: 'Diseno del sistema',
+      eyebrow: 'Diseño del sistema',
       title: 'Arquitectura MVC e integraciones',
-      subtitle: 'Arquitectura modular basada en MVC para facilitar mantenimiento, escalabilidad y reutilizacion.',
+      subtitle: 'Arquitectura modular basada en MVC para facilitar mantenimiento, escalabilidad y reutilización.',
       content: (
         <div className="architecture-slide slide-stack">
           <section className="architecture-flow slide-enter">
@@ -560,15 +560,15 @@ function App() {
     {
       id: 'modulos-acceso',
       label: 'Acceso',
-      eyebrow: 'Operacion principal',
-      title: 'Modulos de acceso',
+      eyebrow: 'Operación principal',
+      title: 'Módulos de acceso',
       subtitle: 'Funciones que validan, autorizan y registran el ingreso peatonal.',
       content: (
         <div className="modules-slide slide-stack focused-slide">
           <section className="modules-group slide-enter">
             <div className="modules-group-title">
-              <span>Operacion de acceso</span>
-              <p>Validacion, autorizacion y control de ingreso.</p>
+              <span>Operación de acceso</span>
+              <p>Validación, autorización y control de ingreso.</p>
             </div>
             <div className="modules-grid primary">
               {modules.slice(0, 4).map((item, index) => (
@@ -590,15 +590,15 @@ function App() {
     {
       id: 'modulos-supervision',
       label: 'Supervision',
-      eyebrow: 'Operacion principal',
-      title: 'Supervision y control',
+      eyebrow: 'Operación principal',
+      title: 'Supervisión y control',
       subtitle: 'Funciones para monitorear eventos, revisar historiales y tomar decisiones.',
       content: (
         <div className="modules-slide slide-stack focused-slide">
           <section className="modules-group slide-enter">
             <div className="modules-group-title">
-              <span>Supervision y administracion</span>
-              <p>Monitoreo, analitica y control institucional.</p>
+              <span>Supervisión y administración</span>
+              <p>Monitoreo, analítica y control institucional.</p>
             </div>
             <div className="modules-grid secondary">
               {modules.slice(4).map((item, index) => (
@@ -647,13 +647,13 @@ function App() {
       label: 'Infraestructura',
       eyebrow: 'Datos y control',
       title: 'Datos de seguridad e infraestructura',
-      subtitle: 'Tablas para dispositivos, alertas, auditoria y configuracion.',
+      subtitle: 'Tablas para dispositivos, alertas, auditoría y configuración.',
       content: (
         <div className="data-slide slide-stack focused-slide">
           <section className="data-group slide-enter">
             <div className="data-group-title">
               <span>Infraestructura y seguridad</span>
-              <p>Dispositivos, alertas, auditoria y configuracion.</p>
+              <p>Dispositivos, alertas, auditoría y configuración.</p>
             </div>
             <div className="data-grid secondary">
               {databaseTables.slice(4).map((table, index) => (
@@ -744,8 +744,8 @@ function App() {
       id: 'seguridad',
       label: 'Seguridad',
       eyebrow: 'Criterios del proyecto',
-      title: 'Seguridad y proteccion de datos',
-      subtitle: 'Controles para proteger informacion, credenciales y eventos del sistema.',
+      title: 'Seguridad y protección de datos',
+      subtitle: 'Controles para proteger información, credenciales y eventos del sistema.',
       content: (
         <div className="security-slide slide-stack focused-slide">
           <section className="security-bottom slide-enter">
@@ -768,10 +768,10 @@ function App() {
                 <div className="icon-badge small">
                   <Icon name="lock" />
                 </div>
-                <h3>Proteccion de datos</h3>
+                <h3>Protección de datos</h3>
               </div>
               <p>
-                Resguardo de informacion personal e institucional.
+                Resguardo de información personal e institucional.
               </p>
             </article>
             <article className="mini-card">
@@ -792,9 +792,9 @@ function App() {
     {
       id: 'reportes',
       label: 'Reportes',
-      eyebrow: 'Analitica',
+      eyebrow: 'Analítica',
       title: 'Dashboards y crecimiento',
-      subtitle: 'La informacion registrada se convierte en indicadores y nuevas oportunidades.',
+      subtitle: 'La información registrada se convierte en indicadores y nuevas oportunidades.',
       content: (
         <div className="closing-stack">
           <div className="two-column compact-grid slide-stack">
@@ -831,16 +831,16 @@ function App() {
     {
       id: 'cierre',
       label: 'Cierre',
-      eyebrow: 'Proyeccion',
-      title: 'Conclusion',
-      subtitle: 'A.I.P. fortalece el control institucional con automatizacion, seguridad y datos claros.',
+      eyebrow: 'Proyección',
+      title: 'Conclusión',
+      subtitle: 'A.I.P. fortalece el control institucional con automatización, seguridad y datos claros.',
       content: (
         <div className="closing-stack">
           <section className="closing final-closing slide-enter">
-            <p className="eyebrow">Conclusion</p>
-            <h2>Automatiza el ingreso, fortalece la seguridad y aporta informacion para decidir</h2>
+            <p className="eyebrow">Conclusión</p>
+            <h2>Automatiza el ingreso, fortalece la seguridad y aporta información para decidir</h2>
             <p>
-              A.I.P. integra automatizacion, seguridad, dispositivos fisicos y analitica
+              A.I.P. integra automatización, seguridad, dispositivos físicos y analítica
               para mejorar el control institucional.
             </p>
           </section>
@@ -926,9 +926,9 @@ function App() {
           <div className="topbar-copy">
             <p className="eyebrow compact">{currentSlide.eyebrow}</p>
             <strong>{currentSlide.label}</strong>
-            <small>Presentacion interactiva del sistema A.I.P.</small>
+            <small>Presentación interactiva del sistema A.I.P.</small>
           </div>
-          <nav className="map-trail" aria-label="Ruta de la presentacion">
+          <nav className="map-trail" aria-label="Ruta de la presentación">
             {slides.map((slide, index) => (
               <button
                 type="button"
@@ -971,7 +971,7 @@ function App() {
         </article>
 
         <footer className="slide-controls">
-          <div className="swipe-hint">Desliza en movil o usa las flechas para navegar</div>
+          <div className="swipe-hint">Desliza en móvil o usa las flechas para navegar</div>
           <button type="button" className="nav-button secondary" onClick={prevSlide}>
             <Icon name="arrowLeft" />
             <span>Anterior</span>
