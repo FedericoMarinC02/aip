@@ -285,6 +285,15 @@ function App() {
                 <li>Base para reportes e integraciones.</li>
               </ul>
             </div>
+            <div className="team-section">
+              <h3>Equipo de desarrollo</h3>
+              <ul className="team-members">
+                <li>Jimmy Alexander Hurtado Montaño</li>
+                <li>Juan José Valencia Pelaes</li>
+                <li>Salomé Rodríguez Rios</li>
+                <li>Federico Marín Cardona</li>
+              </ul>
+            </div>
             <div className="hero-tags">
               <span>Laravel</span>
               <span>Bootstrap</span>
