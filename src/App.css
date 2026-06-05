@@ -252,8 +252,10 @@
 }
 
 .slide-counter {
-  display: grid;
-  justify-items: end;
+  display: flex;
+  align-items: baseline;
+  gap: 0.1rem;
+  justify-content: flex-end;
 }
 
 .slide-counter span {
