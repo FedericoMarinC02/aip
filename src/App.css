@@ -509,7 +509,7 @@
 .team-section {
   display: grid;
   gap: 0.5rem;
-  max-width: 35rem;
+  max-width: 100%;
   padding: 0.68rem 0.82rem;
   border: 1px solid rgba(120, 218, 255, 0.12);
   border-radius: 1rem;
@@ -1395,6 +1395,11 @@
     max-width: 12ch;
   }
 
+  .hero-layout,
+  .team-section {
+    width: 100%;
+  }
+
   .tech-badges {
     grid-template-columns: 1fr;
   }
@@ -1638,6 +1643,7 @@
   .hero-text,
   .hero-support-text,
   .hero-points li,
+  .team-members li,
   .signal-card li,
   .feature-list li,
   .section-title p,

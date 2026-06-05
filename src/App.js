@@ -867,12 +867,12 @@ function App() {
 
   const nextSlide = () => {
     setTransitionDirection('forward');
-    setActiveSlide((current) => (current + 1) % slides.length);
+    setActiveSlide((current) => Math.min(current + 1, slides.length - 1));
   };
 
   const prevSlide = () => {
     setTransitionDirection('backward');
-    setActiveSlide((current) => (current - 1 + slides.length) % slides.length);
+    setActiveSlide((current) => Math.max(current - 1, 0));
   };
 
   const handlePointerMove = (event) => {
@@ -915,12 +915,12 @@ function App() {
     const onKeyDown = (event) => {
       if (event.key === 'ArrowRight' || event.key === 'PageDown') {
         setTransitionDirection('forward');
-        setActiveSlide((current) => (current + 1) % slides.length);
+        setActiveSlide((current) => Math.min(current + 1, slides.length - 1));
       }
 
       if (event.key === 'ArrowLeft' || event.key === 'PageUp') {
         setTransitionDirection('backward');
-        setActiveSlide((current) => (current - 1 + slides.length) % slides.length);
+        setActiveSlide((current) => Math.max(current - 1, 0));
       }
     };
 
