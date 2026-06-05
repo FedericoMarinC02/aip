@@ -1072,7 +1072,8 @@
 
 .slide-controls {
   display: grid;
-  grid-template-columns: 1fr auto auto;
+  grid-template-columns: auto auto;
+  justify-content: center;
   align-items: center;
   gap: 0.9rem;
   padding: 0.72rem 1.2rem;
@@ -1089,6 +1090,7 @@
 }
 
 .swipe-hint {
+  display: none;
   justify-self: start;
   padding: 0.48rem 0.75rem;
   border: 1px solid rgba(120, 218, 255, 0.12);
@@ -2710,10 +2712,11 @@ body,
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .swipe-hint {
+  display: none;
   padding: 0.38rem 0.65rem;
   font-size: 0.9rem;
   flex-basis: 100%;

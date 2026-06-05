@@ -971,7 +971,6 @@ function App() {
         </article>
 
         <footer className="slide-controls">
-          <div className="swipe-hint">Desliza en móvil o usa las flechas para navegar</div>
           <button type="button" className="nav-button secondary" onClick={prevSlide}>
             <Icon name="arrowLeft" />
             <span>Anterior</span>
