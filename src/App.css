@@ -1674,3 +1674,1156 @@
     font-size: 0.8rem;
   }
 }
+
+/* Presentation polish: bigger, clearer and calmer for live exposition. */
+.topbar {
+  grid-template-columns: minmax(0, 15rem) 1fr auto;
+  padding: 0.65rem 1.5rem;
+}
+
+.topbar-copy small {
+  display: none;
+}
+
+.map-trail {
+  justify-content: center;
+}
+
+.trail-stop {
+  padding: 0.62rem 0.98rem 0.62rem 1.22rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.slide-card {
+  display: grid;
+  align-content: center;
+  padding: clamp(1.4rem, 2.6vw, 3rem);
+}
+
+.hero-slide {
+  display: grid;
+}
+
+.section-title {
+  max-width: 72rem;
+  margin: 0 auto 1.3rem;
+  text-align: center;
+}
+
+.section-title span,
+.eyebrow {
+  justify-content: center;
+  font-size: clamp(0.95rem, 1.2vw, 1.25rem);
+  font-weight: 800;
+  letter-spacing: 0.16em;
+}
+
+.section-title h2 {
+  margin-bottom: 0.65rem;
+  font-size: clamp(3rem, 5.6vw, 6.2rem);
+  line-height: 0.98;
+}
+
+.section-title p {
+  max-width: 64rem;
+  margin: 0 auto;
+  font-size: clamp(1.25rem, 2vw, 2rem);
+  line-height: 1.35;
+  color: rgba(241, 248, 255, 0.86);
+}
+
+.hero-layout {
+  width: min(100%, 1180px);
+  margin: 0 auto;
+  gap: clamp(1rem, 2vw, 2rem);
+  align-items: center;
+}
+
+.hero-copy {
+  gap: 1rem;
+}
+
+.hero-copy h2 {
+  max-width: 12ch;
+  font-size: clamp(3.2rem, 6.2vw, 6.8rem);
+  line-height: 0.9;
+}
+
+.hero-text {
+  max-width: 48rem;
+  font-size: clamp(1.35rem, 2.1vw, 2.1rem);
+  line-height: 1.28;
+  color: rgba(241, 248, 255, 0.88);
+}
+
+.hero-support {
+  max-width: 42rem;
+  padding: 1.15rem 1.35rem;
+  border-radius: 1.2rem;
+}
+
+.hero-points {
+  gap: 0.55rem;
+}
+
+.hero-points li,
+.signal-card li,
+.feature-list li {
+  font-size: clamp(1.12rem, 1.55vw, 1.45rem);
+  line-height: 1.34;
+}
+
+.hero-tags span,
+.tech-badge,
+.swipe-hint,
+.nav-button {
+  font-size: 1.08rem;
+}
+
+.sena-logo {
+  width: min(100%, 24rem);
+}
+
+.slide-stack,
+.closing-stack {
+  width: min(100%, 1180px);
+  margin: 0 auto;
+  gap: clamp(1rem, 1.7vw, 1.6rem);
+}
+
+.focused-slide {
+  width: min(100%, 1120px);
+}
+
+.focused-slide .modules-group,
+.focused-slide .data-group,
+.focused-slide .security-bottom {
+  gap: clamp(1rem, 2vw, 1.8rem);
+}
+
+.focused-slide .modules-grid.primary,
+.focused-slide .data-grid.primary,
+.focused-slide .data-grid.secondary {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.focused-slide .modules-grid.secondary,
+.focused-slide .security-bottom {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.focused-slide .glass-card,
+.focused-slide .mini-card,
+.focused-slide .table-card {
+  min-height: clamp(10rem, 18vh, 14rem);
+  display: grid;
+  align-content: center;
+}
+
+.modules-group-title,
+.data-group-title {
+  text-align: center;
+}
+
+.workbench-slide {
+  width: min(100%, 1180px);
+  grid-template-rows: minmax(0, 1fr) auto;
+}
+
+.workbench-only {
+  width: min(100%, 1320px);
+  grid-template-rows: auto minmax(0, 1fr);
+  gap: 0.65rem;
+}
+
+.image-slide {
+  align-content: stretch;
+  padding: clamp(0.45rem, 0.9vw, 0.9rem) clamp(1rem, 1.5vw, 1.6rem);
+}
+
+.workbench-title {
+  text-align: center;
+}
+
+.workbench-title span {
+  display: block;
+  color: #8ee9ff;
+  font-size: clamp(0.78rem, 1vw, 0.95rem);
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.workbench-title h2 {
+  margin: 0.1rem 0 0.15rem;
+  font-size: clamp(1.8rem, 3.6vw, 3.5rem);
+  line-height: 0.95;
+}
+
+.workbench-title p {
+  margin: 0;
+  color: rgba(241, 248, 255, 0.82);
+  font-size: clamp(0.9rem, 1.2vw, 1.12rem);
+}
+
+.workbench-frame {
+  min-height: clamp(22rem, 48vh, 34rem);
+  display: grid;
+  place-items: center;
+  padding: clamp(1rem, 1.8vw, 1.6rem);
+  border: 1px solid rgba(120, 218, 255, 0.16);
+  border-radius: 1.1rem;
+  background:
+    linear-gradient(135deg, rgba(16, 33, 60, 0.9), rgba(5, 12, 24, 0.84)),
+    var(--panel);
+  box-shadow:
+    0 28px 80px rgba(2, 8, 18, 0.38),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  overflow: hidden;
+}
+
+.workbench-frame img {
+  width: 100%;
+  height: 100%;
+  max-height: 32rem;
+  object-fit: contain;
+  object-position: center;
+  filter: drop-shadow(0 18px 34px rgba(0, 0, 0, 0.32));
+}
+
+.workbench-only .workbench-frame {
+  height: 100%;
+  min-height: 0;
+  padding: clamp(0.55rem, 1vw, 1rem);
+  background:
+    linear-gradient(135deg, rgba(12, 26, 48, 0.82), rgba(5, 12, 24, 0.82)),
+    var(--panel);
+}
+
+.workbench-only .workbench-frame img {
+  max-height: 100%;
+  background: #ffffff;
+  border-radius: 0.35rem;
+}
+
+.workbench-notes {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.glass-card,
+.mini-card,
+.table-card,
+.stat-card,
+.closing,
+.signal-card {
+  padding: clamp(1rem, 1.45vw, 1.55rem);
+  border-radius: 1.05rem;
+}
+
+.card-heading {
+  gap: 0.85rem;
+  margin-bottom: 0.7rem;
+}
+
+.card-heading h3,
+.mini-card h3,
+.table-card h3,
+.signal-card h3 {
+  font-size: clamp(1.35rem, 1.9vw, 2rem);
+  line-height: 1.08;
+}
+
+.glass-card p,
+.mini-card p,
+.table-card p,
+.closing p,
+.modules-group-title p,
+.data-group-title p,
+.tech-card-description {
+  font-size: clamp(1.12rem, 1.55vw, 1.5rem);
+  line-height: 1.36;
+  color: rgba(241, 248, 255, 0.84);
+}
+
+.objective-group h4,
+.modules-group-title span,
+.data-group-title span {
+  font-size: 1.05rem;
+  font-weight: 800;
+}
+
+.icon-badge {
+  width: 2.65rem;
+  height: 2.65rem;
+  border-radius: 0.9rem;
+}
+
+.icon-badge.small {
+  width: 2.25rem;
+  height: 2.25rem;
+}
+
+.icon {
+  width: 1.22rem;
+  height: 1.22rem;
+}
+
+.tech-grid {
+  gap: 1.05rem;
+}
+
+.tech-stack-list {
+  grid-template-columns: 1fr;
+}
+
+.tech-stack-item {
+  padding: 1rem;
+}
+
+.tech-stack-item span,
+.indicator-item strong {
+  font-size: clamp(1.2rem, 1.65vw, 1.55rem);
+}
+
+.indicator-item span {
+  font-size: 1.08rem;
+}
+
+.table-card h3 {
+  letter-spacing: 0.05em;
+}
+
+.closing {
+  padding: clamp(1.5rem, 2.2vw, 2.4rem);
+}
+
+.closing h2 {
+  font-size: clamp(3rem, 5.4vw, 5.8rem);
+}
+
+.slide-controls {
+  padding: 0.78rem 1.5rem;
+}
+
+@media (min-width: 1041px) {
+  .hero-slide {
+    display: grid;
+    align-content: center;
+  }
+
+  .hero-layout {
+    height: auto;
+    min-height: 0;
+    grid-template-columns: minmax(0, 1.08fr) minmax(0, 0.92fr);
+    grid-template-rows: auto auto;
+  }
+
+  .hero-copy {
+    justify-content: center;
+  }
+
+  .hero-overview .mini-card p,
+  .hero-detail-list li,
+  .hero-support-text,
+  .hero-points li,
+  .signal-card li,
+  .indicator-item span,
+  .objective-side .feature-list li,
+  .objective-summary .mini-card p {
+    font-size: clamp(1.08rem, 1.45vw, 1.36rem);
+    line-height: 1.32;
+  }
+
+  .signal-card h3,
+  .indicator-item strong,
+  .card-heading h3,
+  .mini-card h3 {
+    font-size: clamp(1.35rem, 1.9vw, 1.9rem);
+  }
+
+  .objective-slide {
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  }
+}
+
+@media (max-width: 1180px) {
+  .topbar {
+    grid-template-columns: 1fr;
+  }
+
+  .map-trail {
+    justify-content: start;
+  }
+}
+
+@media (max-width: 640px) {
+  .slide-card {
+    align-content: start;
+    padding: 1.15rem;
+  }
+
+  .section-title {
+    text-align: left;
+  }
+
+  .section-title span,
+  .eyebrow {
+    justify-content: flex-start;
+  }
+
+  .section-title h2,
+  .hero-copy h2,
+  .closing h2 {
+    font-size: clamp(2.4rem, 12vw, 4.2rem);
+  }
+
+  .hero-text,
+  .hero-points li,
+  .signal-card li,
+  .feature-list li,
+  .section-title p,
+  .glass-card p,
+  .mini-card p,
+  .table-card p,
+  .closing p {
+    font-size: 1.15rem;
+    line-height: 1.38;
+  }
+
+  .card-heading h3,
+  .mini-card h3,
+  .table-card h3 {
+    font-size: 1.32rem;
+  }
+
+  .focused-slide .modules-grid.primary,
+  .focused-slide .modules-grid.secondary,
+  .focused-slide .data-grid.primary,
+  .focused-slide .data-grid.secondary,
+  .focused-slide .security-bottom,
+  .workbench-notes {
+    grid-template-columns: 1fr;
+  }
+
+  .modules-group-title,
+  .data-group-title {
+    text-align: left;
+  }
+}
+
+/* Portada: distribucion limpia en dos columnas, sin solapamientos. */
+.topbar {
+  grid-template-columns: minmax(0, 14rem) minmax(0, 1fr) auto;
+  gap: 1.25rem;
+}
+
+.map-trail {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.trail-stop {
+  padding: 0.5rem 0.8rem 0.5rem 1.05rem;
+  font-size: 0.96rem;
+}
+
+.slide-card {
+  padding: clamp(1.25rem, 2vw, 2.35rem);
+}
+
+.hero-layout {
+  width: min(100%, 1240px);
+  grid-template-columns: minmax(0, 1.08fr) minmax(22rem, 0.92fr);
+  grid-template-rows: auto;
+  grid-template-areas: 'copy side';
+  align-items: center;
+  gap: clamp(1.2rem, 2.2vw, 2.5rem);
+}
+
+.hero-copy h2 {
+  font-size: clamp(3rem, 5.3vw, 5.7rem);
+}
+
+.hero-side {
+  grid-area: side;
+  display: grid;
+  grid-template-rows: none;
+  gap: 0.9rem;
+  align-content: center;
+  min-height: 0;
+}
+
+.hero-overview {
+  grid-area: auto;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.9rem;
+  margin: 0;
+}
+
+.hero-overview .mini-card {
+  min-height: 0;
+}
+
+.indicator-list {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.indicator-item {
+  align-items: center;
+}
+
+.hero-summary-card {
+  width: 100%;
+}
+
+.hero-summary-card,
+.hero-overview .mini-card,
+.indicators-card {
+  padding: clamp(0.9rem, 1.25vw, 1.2rem);
+}
+
+.hero-overview .mini-card p,
+.indicator-item span {
+  font-size: clamp(1rem, 1.25vw, 1.16rem);
+  line-height: 1.32;
+}
+
+@media (max-width: 1280px) {
+  .trail-stop {
+    width: 2.35rem;
+    height: 2.35rem;
+    padding: 0;
+  }
+
+  .trail-stop span {
+    display: none;
+  }
+
+  .trail-stop::before {
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .trail-stop.active::before,
+  .trail-stop:hover::before {
+    transform: translate(-50%, -50%) scale(1.14);
+  }
+}
+
+@media (max-height: 760px) and (min-width: 900px) {
+  .hero-copy h2 {
+    font-size: clamp(2.6rem, 4.7vw, 4.8rem);
+  }
+
+  .hero-text {
+    font-size: clamp(1.12rem, 1.6vw, 1.55rem);
+  }
+
+  .hero-points li,
+  .signal-card li,
+  .feature-list li {
+    font-size: clamp(1rem, 1.18vw, 1.14rem);
+  }
+
+  .glass-card,
+  .mini-card,
+  .table-card,
+  .stat-card,
+  .closing,
+  .signal-card {
+    padding: 0.9rem 1.05rem;
+  }
+}
+
+@media (max-width: 1040px) {
+  .hero-layout {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'copy'
+      'side';
+  }
+
+  .hero-side {
+    align-content: start;
+  }
+}
+
+@media (max-width: 760px) {
+  .hero-overview,
+  .indicator-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Modo presentacion sin scroll: todo debe entrar en una sola pantalla. */
+html,
+body,
+#root,
+.presentation,
+.slide-shell {
+  height: 100vh;
+  height: 100dvh;
+  overflow: hidden;
+}
+
+.slide-shell {
+  grid-template-rows: 4.4rem minmax(0, 1fr) 3.9rem;
+}
+
+.topbar {
+  min-height: 0;
+  padding: 0.55rem 1.35rem;
+}
+
+.topbar-copy {
+  gap: 0.05rem;
+}
+
+.topbar-copy strong {
+  font-size: clamp(1.2rem, 1.55vw, 1.55rem);
+}
+
+.eyebrow.compact {
+  font-size: 0.74rem;
+  letter-spacing: 0.18em;
+}
+
+.map-trail {
+  justify-content: center;
+  gap: 0.42rem;
+}
+
+.trail-stop {
+  width: 2.25rem;
+  height: 2.25rem;
+  padding: 0;
+}
+
+.trail-stop span {
+  display: none;
+}
+
+.trail-stop::before {
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.trail-stop.active::before,
+.trail-stop:hover::before {
+  transform: translate(-50%, -50%) scale(1.18);
+}
+
+.slide-counter span {
+  font-size: clamp(1.35rem, 2vw, 1.8rem);
+}
+
+.slide-counter small {
+  font-size: 0.9rem;
+}
+
+.slide-card {
+  min-height: 0;
+  height: 100%;
+  max-height: 100%;
+  overflow: hidden !important;
+  align-content: center;
+  padding: clamp(0.9rem, 1.55vw, 1.7rem);
+}
+
+.slide-card > .section-title,
+.slide-card > .slide-stack,
+.slide-card > .closing-stack,
+.slide-card > .hero-layout {
+  min-height: 0;
+}
+
+.section-title {
+  margin-bottom: clamp(0.55rem, 1.1vw, 0.95rem);
+}
+
+.section-title h2 {
+  font-size: clamp(2.4rem, 4.1vw, 4.5rem);
+  line-height: 0.96;
+  margin-bottom: 0.35rem;
+}
+
+.section-title p {
+  font-size: clamp(1rem, 1.45vw, 1.38rem);
+  line-height: 1.25;
+}
+
+.slide-stack,
+.closing-stack,
+.workbench-slide {
+  max-height: 100%;
+  gap: clamp(0.55rem, 1vw, 0.95rem);
+}
+
+.glass-card,
+.mini-card,
+.table-card,
+.stat-card,
+.closing,
+.signal-card {
+  padding: clamp(0.75rem, 1.05vw, 1.1rem);
+}
+
+.card-heading {
+  gap: 0.62rem;
+  margin-bottom: 0.45rem;
+}
+
+.card-heading h3,
+.mini-card h3,
+.table-card h3,
+.signal-card h3 {
+  font-size: clamp(1.08rem, 1.45vw, 1.45rem);
+  line-height: 1.08;
+}
+
+.glass-card p,
+.mini-card p,
+.table-card p,
+.closing p,
+.modules-group-title p,
+.data-group-title p,
+.tech-card-description {
+  font-size: clamp(0.94rem, 1.2vw, 1.14rem);
+  line-height: 1.28;
+}
+
+.hero-layout {
+  max-height: 100%;
+  gap: clamp(0.8rem, 1.7vw, 1.5rem);
+}
+
+.hero-copy {
+  gap: clamp(0.45rem, 0.9vw, 0.8rem);
+}
+
+.hero-copy h2 {
+  font-size: clamp(2.5rem, 4.7vw, 4.9rem);
+  line-height: 0.9;
+}
+
+.hero-text {
+  font-size: clamp(1.05rem, 1.55vw, 1.45rem);
+  line-height: 1.27;
+}
+
+.hero-support {
+  padding: 0.75rem 0.95rem;
+}
+
+.hero-points {
+  gap: 0.28rem;
+}
+
+.hero-points li,
+.signal-card li,
+.feature-list li {
+  font-size: clamp(0.94rem, 1.16vw, 1.12rem);
+  line-height: 1.26;
+  margin-top: 0.12rem;
+}
+
+.hero-tags {
+  gap: 0.32rem;
+}
+
+.hero-tags span,
+.tech-badge,
+.swipe-hint,
+.nav-button {
+  font-size: clamp(0.85rem, 1vw, 0.98rem);
+}
+
+.sena-logo {
+  width: min(100%, 18rem);
+}
+
+.hero-side {
+  gap: 0.55rem;
+}
+
+.hero-overview {
+  gap: 0.55rem;
+}
+
+.indicator-list {
+  gap: 0.45rem;
+}
+
+.indicator-item strong {
+  font-size: clamp(1rem, 1.25vw, 1.22rem);
+}
+
+.indicator-item span,
+.hero-overview .mini-card p {
+  font-size: clamp(0.86rem, 1vw, 1rem);
+}
+
+.icon-badge {
+  width: 2.15rem;
+  height: 2.15rem;
+}
+
+.icon-badge.small {
+  width: 1.95rem;
+  height: 1.95rem;
+}
+
+.icon {
+  width: 1rem;
+  height: 1rem;
+}
+
+.objective-slide {
+  gap: 0.7rem;
+}
+
+.objective-main,
+.objective-highlights,
+.objective-summary,
+.objective-groups,
+.architecture-flow,
+.architecture-support,
+.security-top,
+.security-bottom {
+  gap: 0.65rem;
+}
+
+.objective-summary .mini-card,
+.focused-slide .glass-card,
+.focused-slide .mini-card,
+.focused-slide .table-card,
+.architecture-step {
+  min-height: 0;
+}
+
+.objective-intro-slide {
+  grid-template-columns: 1fr;
+  width: min(100%, 1040px);
+}
+
+.objective-intro-slide .objective-main {
+  grid-template-rows: auto;
+}
+
+.objective-detail-slide .objective-side {
+  width: min(100%, 920px);
+  margin: 0 auto;
+}
+
+.objective-detail-slide .objective-groups {
+  gap: clamp(0.8rem, 1.8vw, 1.4rem);
+}
+
+.tech-overview-card {
+  gap: 0.75rem;
+}
+
+.tech-card {
+  gap: 0.55rem;
+  padding: clamp(0.75rem, 1vw, 1rem);
+}
+
+.tech-stack-list {
+  gap: 0.45rem;
+}
+
+.tech-stack-item {
+  min-height: 0;
+  padding: 0.62rem 0.75rem;
+}
+
+.inline-tech-logo {
+  height: 1.45rem;
+  max-width: 3rem;
+}
+
+.modules-grid,
+.data-grid,
+.two-column,
+.security-bottom,
+.tech-grid,
+.architecture-flow,
+.architecture-support {
+  gap: 0.65rem;
+}
+
+.table-card h3 {
+  font-size: clamp(1rem, 1.25vw, 1.22rem);
+}
+
+.workbench-frame {
+  min-height: 0;
+  height: min(44vh, 25rem);
+  padding: 0.75rem;
+}
+
+.workbench-frame img {
+  max-height: 100%;
+}
+
+.workbench-notes {
+  gap: 0.65rem;
+}
+
+.closing h2 {
+  font-size: clamp(2.3rem, 4vw, 4.4rem);
+}
+
+.slide-controls {
+  min-height: 0;
+  padding: 0.58rem 1.35rem;
+  gap: 0.7rem;
+}
+
+.swipe-hint {
+  padding: 0.38rem 0.65rem;
+}
+
+.nav-button {
+  padding: 0.55rem 0.9rem;
+}
+
+@media (max-height: 720px) and (min-width: 900px) {
+  .slide-shell {
+    grid-template-rows: 3.8rem minmax(0, 1fr) 3.35rem;
+  }
+
+  .topbar {
+    padding: 0.42rem 1.1rem;
+  }
+
+  .slide-card {
+    padding: 0.75rem 1.15rem;
+  }
+
+  .section-title h2 {
+    font-size: clamp(2rem, 3.4vw, 3.5rem);
+  }
+
+  .section-title p {
+    font-size: clamp(0.9rem, 1.1vw, 1.08rem);
+  }
+
+  .hero-copy h2 {
+    font-size: clamp(2.2rem, 4.1vw, 4.2rem);
+  }
+
+  .hero-text {
+    font-size: clamp(0.98rem, 1.25vw, 1.2rem);
+  }
+
+  .glass-card p,
+  .mini-card p,
+  .table-card p,
+  .closing p,
+  .modules-group-title p,
+  .data-group-title p,
+  .tech-card-description,
+  .hero-points li,
+  .signal-card li,
+  .feature-list li {
+    font-size: 0.9rem;
+    line-height: 1.22;
+  }
+
+  .card-heading h3,
+  .mini-card h3,
+  .table-card h3,
+  .signal-card h3 {
+    font-size: 1.05rem;
+  }
+
+  .sena-logo {
+    width: min(100%, 14rem);
+  }
+}
+
+/* Workbench debe ser una vista de imagen, no una diapositiva de tarjetas. */
+.workbench-only {
+  width: min(100%, 1240px);
+  height: 100%;
+  min-height: 0;
+  grid-template-rows: auto minmax(0, 1fr);
+  gap: 0.5rem;
+}
+
+.workbench-only .workbench-frame {
+  width: 100%;
+  height: 100%;
+  max-height: min(50vh, 31rem);
+  min-height: 0;
+  padding: clamp(1rem, 1.4vw, 1.45rem);
+  overflow: hidden;
+}
+
+.workbench-only .workbench-frame img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 82%;
+  max-height: 92%;
+  object-fit: contain;
+  object-position: center;
+  background: #ffffff;
+  border-radius: 0.35rem;
+}
+
+@media (max-height: 720px) and (min-width: 900px) {
+  .workbench-only .workbench-frame {
+    max-height: 45vh;
+  }
+
+  .workbench-only .workbench-frame img {
+    max-width: 78%;
+    max-height: 90%;
+  }
+}
+
+/* Ajuste final: la imagen Workbench debe verse completa, sin ventana de recorte. */
+.image-slide {
+  padding: 0.65rem 1.5rem 0.85rem;
+}
+
+.workbench-only {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr);
+  align-items: center;
+  justify-items: center;
+  gap: 0.5rem;
+}
+
+.workbench-only .workbench-title {
+  align-self: end;
+}
+
+.workbench-only .workbench-title h2 {
+  font-size: clamp(2rem, 3.4vw, 3.6rem);
+}
+
+.workbench-only .workbench-frame {
+  width: min(78vw, 1120px);
+  height: auto;
+  max-height: none;
+  padding: 0;
+  border: 0;
+  border-radius: 0.45rem;
+  background: transparent;
+  box-shadow: none;
+  overflow: visible;
+  align-self: start;
+}
+
+.workbench-only .workbench-frame img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  max-height: calc(100vh - 18rem);
+  object-fit: contain;
+  background: #ffffff;
+  border-radius: 0.35rem;
+  box-shadow: 0 18px 42px rgba(2, 8, 18, 0.42);
+}
+
+@media (max-height: 760px) and (min-width: 900px) {
+  .workbench-only .workbench-frame {
+    width: min(68vw, 980px);
+  }
+
+  .workbench-only .workbench-title h2 {
+    font-size: clamp(1.7rem, 3vw, 3rem);
+  }
+
+  .workbench-only .workbench-title p {
+    font-size: 0.95rem;
+  }
+}
+
+/* Ajuste de legibilidad: textos un poco mas grandes sin perder encaje. */
+.section-title h2 {
+  font-size: clamp(2.65rem, 4.45vw, 4.85rem);
+}
+
+.section-title p {
+  font-size: clamp(1.08rem, 1.58vw, 1.5rem);
+}
+
+.hero-copy h2 {
+  font-size: clamp(2.75rem, 4.95vw, 5.2rem);
+}
+
+.hero-text {
+  font-size: clamp(1.14rem, 1.68vw, 1.58rem);
+}
+
+.card-heading h3,
+.mini-card h3,
+.table-card h3,
+.signal-card h3 {
+  font-size: clamp(1.18rem, 1.58vw, 1.58rem);
+}
+
+.glass-card p,
+.mini-card p,
+.table-card p,
+.closing p,
+.modules-group-title p,
+.data-group-title p,
+.tech-card-description {
+  font-size: clamp(1rem, 1.3vw, 1.24rem);
+}
+
+.hero-points li,
+.signal-card li,
+.feature-list li {
+  font-size: clamp(1rem, 1.26vw, 1.2rem);
+}
+
+.trail-stop,
+.hero-tags span,
+.tech-badge,
+.swipe-hint,
+.nav-button {
+  font-size: clamp(0.92rem, 1.08vw, 1.05rem);
+}
+
+.workbench-title h2 {
+  font-size: clamp(2.15rem, 3.65vw, 3.8rem);
+}
+
+.workbench-title p {
+  font-size: clamp(0.98rem, 1.28vw, 1.18rem);
+}
+
+@media (max-height: 720px) and (min-width: 900px) {
+  .section-title h2 {
+    font-size: clamp(2.12rem, 3.55vw, 3.65rem);
+  }
+
+  .hero-copy h2 {
+    font-size: clamp(2.28rem, 4.2vw, 4.3rem);
+  }
+
+  .glass-card p,
+  .mini-card p,
+  .table-card p,
+  .closing p,
+  .modules-group-title p,
+  .data-group-title p,
+  .tech-card-description,
+  .hero-points li,
+  .signal-card li,
+  .feature-list li {
+    font-size: 0.96rem;
+  }
+}

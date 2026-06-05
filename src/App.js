@@ -10,30 +10,29 @@ import apiLogo from './imgs/api.png';
 import chartLogo from './imgs/chart.png';
 import mysqlLogo from './imgs/Mysql.webp';
 import workbenchLogo from './imgs/mysql workbench.png';
+import workbenchFit from './imgs/workbench-fit.png';
 import phpMyAdminLogo from './imgs/PhpMyAdmin.png';
 import apacheLogo from './imgs/apahe.png';
 
 const quickStats = [
-  { icon: 'users', value: 'Multiacceso', label: 'aprendices, personal y visitantes' },
-  { icon: 'scan', value: 'Tiempo real', label: 'registro y trazabilidad continua' },
+  { icon: 'users', value: 'Multiacceso', label: 'usuarios y visitantes' },
+  { icon: 'scan', value: 'Tiempo real', label: 'registro inmediato' },
 ];
 
 const objectives = [
-  'Registrar y administrar informacion personal, academica y de seguridad.',
-  'Validar la identidad mediante multiples metodos de autenticacion.',
-  'Registrar en tiempo real entradas y salidas.',
-  'Administrar visitantes y permisos temporales.',
-  'Generar reportes y graficos estadisticos.',
-  'Detectar y notificar eventos de seguridad.',
-  'Integrar el software con dispositivos fisicos de control de acceso.',
-  'Proteger la informacion conforme a la legislacion de proteccion de datos.',
+  'Administrar usuarios y roles.',
+  'Validar identidad con varios metodos.',
+  'Registrar entradas y salidas en tiempo real.',
+  'Controlar visitantes y permisos.',
+  'Generar reportes visuales.',
+  'Notificar eventos de seguridad.',
 ];
 
 const technologies = [
   {
     icon: 'server',
     title: 'Backend',
-    description: 'Gestiona la logica del sistema, la seguridad operativa y la integracion con servicios institucionales.',
+    description: 'Logica, seguridad y servicios del sistema.',
     items: [
       { label: 'Laravel MVC', logo: laravelLogo, alt: 'Laravel' },
       { label: 'PHP 8.x', logo: phpLogo, alt: 'PHP' },
@@ -43,7 +42,7 @@ const technologies = [
   {
     icon: 'monitor',
     title: 'Frontend',
-    description: 'Construye una experiencia visual agil, responsiva y preparada para paneles, consultas y reportes.',
+    description: 'Interfaz clara para consultas, paneles y reportes.',
     items: [
       { label: 'Bootstrap 5', logo: bootstrapLogo, alt: 'Bootstrap' },
       { label: 'JavaScript', logo: jsLogo, alt: 'JavaScript' },
@@ -54,7 +53,7 @@ const technologies = [
   {
     icon: 'database',
     title: 'Datos e Infraestructura',
-    description: 'Centraliza la informacion, facilita la administracion y soporta el despliegue del entorno web.',
+    description: 'Base de datos, administracion y servidor web.',
     items: [
       { label: 'MySQL 8', logo: mysqlLogo, alt: 'MySQL' },
       { label: 'MySQL Workbench', logo: workbenchLogo, alt: 'MySQL Workbench' },
@@ -68,32 +67,32 @@ const architecture = [
   {
     icon: 'cube',
     title: 'Modelo',
-    text: 'Gestiona las entidades del sistema, las reglas de negocio y la relacion con la base de datos para mantener la informacion organizada y consistente.',
+    text: 'Organiza entidades, reglas y base de datos.',
   },
   {
     icon: 'layout',
     title: 'Vista',
-    text: 'Presenta interfaces claras para vigilancia, administracion y consulta, facilitando el uso del sistema por distintos perfiles institucionales.',
+    text: 'Muestra pantallas claras para cada perfil.',
   },
   {
     icon: 'flow',
     title: 'Controlador',
-    text: 'Recibe solicitudes, valida datos y coordina la comunicacion entre vistas y modelo para ejecutar correctamente cada operacion.',
+    text: 'Valida solicitudes y coordina las operaciones.',
   },
   {
     icon: 'lock',
     title: 'Modularidad',
-    text: 'Divide la solucion en componentes independientes que simplifican mantenimiento, crecimiento funcional y reutilizacion del codigo.',
+    text: 'Facilita mantenimiento y crecimiento.',
   },
   {
     icon: 'plug',
     title: 'Integracion',
-    text: 'Permite conectar lectores biometricos, torniquetes, codigos QR y servicios externos para ampliar el control de acceso.',
+    text: 'Conecta QR, biometria y torniquetes.',
   },
   {
     icon: 'sync',
     title: 'Centralizacion',
-    text: 'Reune registros, validaciones y seguimiento operativo en una sola plataforma web para mejorar supervision y trazabilidad.',
+    text: 'Unifica registros y seguimiento.',
   },
 ];
 
@@ -101,93 +100,89 @@ const modules = [
   {
     icon: 'id',
     title: 'Gestion de Usuarios',
-    text: 'Administra estudiantes, instructores, administrativos y visitantes, incluyendo sus datos personales, roles y estados de acceso.',
+    text: 'Datos, roles y estados de acceso.',
   },
   {
     icon: 'fingerprint',
     title: 'Autenticacion',
-    text: 'Valida la identidad mediante huella, QR, carne o PIN para asegurar ingresos confiables y reducir suplantaciones.',
+    text: 'Validacion por huella, QR, carne o PIN.',
   },
   {
     icon: 'gate',
     title: 'Control de Acceso',
-    text: 'Autoriza o bloquea el ingreso segun reglas del sistema y registra cada movimiento con fecha, hora y resultado.',
+    text: 'Autoriza, bloquea y registra movimientos.',
   },
   {
     icon: 'visitor',
     title: 'Gestion de Visitantes',
-    text: 'Controla permisos temporales, autorizaciones especiales y seguimiento de personas externas dentro de la institucion.',
+    text: 'Permisos temporales y seguimiento externo.',
   },
   {
     icon: 'alarm',
     title: 'Seguridad y Alertas',
-    text: 'Detecta intentos fallidos, eventos inusuales y genera notificaciones para una reaccion rapida del personal responsable.',
+    text: 'Alertas ante intentos fallidos o eventos inusuales.',
   },
   {
     icon: 'chart',
     title: 'Reportes y Estadisticas',
-    text: 'Presenta dashboards con graficos, indicadores y consultas para analizar flujos de ingreso y comportamiento institucional.',
+    text: 'Graficos e indicadores para analizar el flujo.',
   },
   {
     icon: 'shield',
     title: 'Auditoria',
-    text: 'Registra cambios, acciones administrativas e historial operativo para fortalecer el control, la trazabilidad y la supervision.',
+    text: 'Historial de acciones y evidencias.',
   },
 ];
 
 const databaseTables = [
   {
     name: 'usuarios',
-    fields: 'Informacion personal, academica y de seguridad de aprendices, instructores, administrativos y otros perfiles autorizados.',
+    fields: 'Datos principales de cada persona registrada.',
   },
   {
     name: 'roles',
-    fields: 'Perfiles, privilegios y reglas de acceso que determinan funciones, permisos y alcance operativo dentro del sistema.',
+    fields: 'Permisos y alcance de cada perfil.',
   },
   {
     name: 'accesos',
-    fields: 'Fecha, hora, metodo de validacion, resultado del ingreso y trazabilidad completa de cada movimiento registrado.',
+    fields: 'Fecha, hora, metodo y resultado.',
   },
   {
     name: 'visitantes',
-    fields: 'Permisos temporales, autorizaciones especiales, motivo de ingreso y seguimiento de personas externas a la institucion.',
+    fields: 'Permisos, motivo y autorizacion.',
   },
   {
     name: 'dispositivos',
-    fields: 'Lectores biometricos, torniquetes, puntos de acceso y configuraciones asociadas a la infraestructura fisica.',
+    fields: 'Lectores, torniquetes y puntos de acceso.',
   },
   {
     name: 'alertas',
-    fields: 'Eventos de seguridad, intentos fallidos, incidencias operativas y notificaciones generadas por el sistema.',
+    fields: 'Eventos, incidencias y notificaciones.',
   },
   {
     name: 'auditorias',
-    fields: 'Historial administrativo, cambios realizados y evidencias de acciones para control, supervision y seguimiento.',
+    fields: 'Cambios y acciones administrativas.',
   },
   {
     name: 'configuraciones',
-    fields: 'Parametros operativos, reglas generales y ajustes que permiten adaptar el sistema a las necesidades institucionales.',
+    fields: 'Parametros y reglas del sistema.',
   },
 ];
 
 const requirements = {
   funcionales: [
-    'Registrar usuarios y actualizar sus datos.',
-    'Validar accesos mediante multiples metodos.',
-    'Gestionar visitantes y permisos temporales.',
-    'Generar reportes operativos e institucionales.',
-    'Exportar informacion para analisis y seguimiento.',
-    'Enviar alertas ante eventos de seguridad.',
-    'Consultar historiales de ingreso y movimientos.',
-    'Administrar roles, permisos y niveles de acceso.',
+    'Registrar usuarios.',
+    'Validar accesos.',
+    'Gestionar visitantes.',
+    'Generar reportes.',
+    'Enviar alertas.',
+    'Consultar historiales.',
   ],
   noFuncionales: [
-    'Tiempo de respuesta menor a cinco segundos.',
-    'Soporte para miles de accesos diarios.',
-    'Interfaz intuitiva, clara y responsiva.',
-    'Proteccion de datos personales e institucionales.',
-    'Alta disponibilidad y continuidad operativa.',
-    'Escalabilidad tecnologica para crecimiento futuro.',
+    'Respuesta rapida.',
+    'Alta disponibilidad.',
+    'Interfaz responsiva.',
+    'Proteccion de datos.',
   ],
 };
 
@@ -280,18 +275,14 @@ function App() {
             <SenaLogo />
             <h2>Automatizacion de Ingreso Peatonal</h2>
             <p className="hero-text">
-              Sistema de informacion para automatizar y optimizar el control de acceso al SENA
-              Regional Caldas mediante autenticacion segura, registro automatico y trazabilidad.
+              Control de ingreso para el SENA Regional Caldas con autenticacion segura,
+              registro automatico y trazabilidad.
             </p>
             <div className="hero-support">
-              <p className="hero-support-text">
-                Centraliza usuarios, validaciones y eventos de ingreso en una experiencia mas rapida
-                para vigilancia, administracion y seguimiento institucional.
-              </p>
               <ul className="hero-points">
-                <li>Validacion unificada para personal, aprendices y visitantes.</li>
-                <li>Monitoreo continuo con registros listos para consulta y auditoria.</li>
-                <li>Base tecnologica preparada para crecer con reportes e integraciones fisicas.</li>
+                <li>Ingreso mas rapido.</li>
+                <li>Registros consultables.</li>
+                <li>Base para reportes e integraciones.</li>
               </ul>
             </div>
             <div className="hero-tags">
@@ -302,21 +293,19 @@ function App() {
             </div>
           </div>
           <div className="hero-side slide-enter slide-delay-1">
-            <div className="hero-panel">
-              <div className="signal-card">
-                <div className="signal-top">
-                  <span className="pulse-dot" />
-                  <p>Estado del sistema</p>
-                </div>
-                <h3>Acceso seguro y centralizado</h3>
-                <ul>
-                  <li>Gestiona aprendices, instructores, administrativos, contratistas y visitantes.</li>
-                  <li>Integra lectores biometricos, torniquetes y camaras de seguridad.</li>
-                  <li>Genera historial completo para administradores y personal de seguridad.</li>
-                </ul>
+            <article className="signal-card hero-summary-card">
+              <div className="signal-top">
+                <span className="pulse-dot" />
+                <p>Resumen del proyecto</p>
               </div>
-            </div>
-            <article className="mini-card indicators-card">
+              <h3>Acceso seguro y centralizado</h3>
+              <ul>
+                <li>Usuarios, personal y visitantes.</li>
+                <li>Biometria, QR y torniquetes.</li>
+                <li>Historial para consulta y auditoria.</li>
+              </ul>
+            </article>
+            <article className="mini-card indicators-card hero-summary-card">
               <div className="card-heading">
                 <div className="icon-badge small">
                   <Icon name="scan" />
@@ -337,40 +326,30 @@ function App() {
                 ))}
               </div>
             </article>
-          </div>
-          <div className="hero-overview slide-enter slide-delay-2">
-            <article className="mini-card">
-              <div className="card-heading">
-                <div className="icon-badge small">
-                  <Icon name="shield" />
+            <div className="hero-overview">
+              <article className="mini-card">
+                <div className="card-heading">
+                  <div className="icon-badge small">
+                    <Icon name="shield" />
+                  </div>
+                  <h3>Proposito</h3>
                 </div>
-                <h3>Proposito</h3>
-              </div>
-              <p>
-                Controlar el ingreso peatonal con validacion segura, registro automatico y
-                seguimiento institucional en una sola plataforma web.
-              </p>
-              <ul className="hero-detail-list">
-                <li>Reduce tiempos de verificacion en puntos de acceso.</li>
-                <li>Facilita decisiones operativas para vigilancia y administracion.</li>
-              </ul>
-            </article>
-            <article className="mini-card">
-              <div className="card-heading">
-                <div className="icon-badge small">
-                  <Icon name="chart" />
+                <p>
+                  Validacion segura, registro automatico y seguimiento institucional.
+                </p>
+              </article>
+              <article className="mini-card">
+                <div className="card-heading">
+                  <div className="icon-badge small">
+                    <Icon name="chart" />
+                  </div>
+                  <h3>Impacto</h3>
                 </div>
-                <h3>Impacto</h3>
-              </div>
-              <p>
-                Reduce procesos manuales y mejora la consulta de historiales, reportes y
-                trazabilidad para el control institucional diario.
-              </p>
-              <ul className="hero-detail-list">
-                <li>Fortalece la seguridad con evidencia organizada y accesible.</li>
-                <li>Prepara la base para dashboards, alertas y crecimiento futuro.</li>
-              </ul>
-            </article>
+                <p>
+                  Menos procesos manuales y mejores datos para decidir.
+                </p>
+              </article>
+            </div>
           </div>
         </div>
       ),
@@ -382,7 +361,7 @@ function App() {
       title: 'Descripcion general y objetivo',
       subtitle: 'Plataforma web para automatizar el ingreso peatonal y apoyar la gestion institucional.',
       content: (
-        <div className="objective-slide slide-stack">
+        <div className="objective-slide slide-stack objective-intro-slide">
           <div className="objective-main slide-enter">
             <article className="glass-card">
               <div className="card-heading">
@@ -392,8 +371,8 @@ function App() {
                 <h3>Objetivo general</h3>
               </div>
               <p>
-                Disenar e implementar una plataforma web que automatice el registro y control del
-                ingreso peatonal, reduzca tiempos de espera y proporcione informacion estadistica.
+                Automatizar el ingreso peatonal con informacion clara para seguridad y
+                administracion.
               </p>
             </article>
             <div className="objective-highlights">
@@ -404,7 +383,7 @@ function App() {
                   </div>
                   <h3>Operacion en tiempo real</h3>
                 </div>
-                <p>Registrar accesos, validar identidades y mantener trazabilidad continua del ingreso institucional.</p>
+                <p>Registrar accesos y validar identidades al instante.</p>
               </article>
               <article className="mini-card">
                 <div className="card-heading">
@@ -413,16 +392,56 @@ function App() {
                   </div>
                   <h3>Valor para la gestion</h3>
                 </div>
-                <p>Convertir los registros diarios en reportes, indicadores y apoyo para la toma de decisiones.</p>
+                <p>Convertir registros en indicadores utiles.</p>
               </article>
             </div>
           </div>
-          <article className="glass-card objective-side slide-enter slide-delay-1">
+          <div className="objective-summary slide-enter slide-delay-1">
+            <article className="mini-card">
+              <div className="card-heading">
+                <div className="icon-badge small">
+                  <Icon name="users" />
+                </div>
+                <h3>Cobertura</h3>
+              </div>
+              <p>Aprendices, personal y visitantes.</p>
+            </article>
+            <article className="mini-card">
+              <div className="card-heading">
+                <div className="icon-badge small">
+                  <Icon name="plug" />
+                </div>
+                <h3>Integracion</h3>
+              </div>
+              <p>Biometria, torniquetes y QR.</p>
+            </article>
+            <article className="mini-card">
+              <div className="card-heading">
+                <div className="icon-badge small">
+                  <Icon name="lock" />
+                </div>
+                <h3>Cumplimiento</h3>
+              </div>
+              <p>Seguridad y proteccion de datos.</p>
+            </article>
+          </div>
+        </div>
+      ),
+    },
+    {
+      id: 'objetivos-especificos',
+      label: 'Objetivos',
+      eyebrow: 'Vision del proyecto',
+      title: 'Objetivos especificos',
+      subtitle: 'Acciones concretas que guian el desarrollo del sistema A.I.P.',
+      content: (
+        <div className="objective-detail-slide slide-stack focused-slide">
+          <article className="glass-card objective-side slide-enter">
             <div className="card-heading">
               <div className="icon-badge">
                 <Icon name="chart" />
               </div>
-              <h3>Objetivos especificos</h3>
+              <h3>Ruta de trabajo</h3>
             </div>
             <div className="objective-groups">
               <div className="objective-group">
@@ -443,35 +462,6 @@ function App() {
               </div>
             </div>
           </article>
-          <div className="objective-summary slide-enter slide-delay-2">
-            <article className="mini-card">
-              <div className="card-heading">
-                <div className="icon-badge small">
-                  <Icon name="users" />
-                </div>
-                <h3>Cobertura</h3>
-              </div>
-              <p>Incluye aprendices, instructores, personal administrativo, seguridad y visitantes.</p>
-            </article>
-            <article className="mini-card">
-              <div className="card-heading">
-                <div className="icon-badge small">
-                  <Icon name="plug" />
-                </div>
-                <h3>Integracion</h3>
-              </div>
-              <p>Se articula con lectores biometricos, torniquetes, QR y otros dispositivos fisicos.</p>
-            </article>
-            <article className="mini-card">
-              <div className="card-heading">
-                <div className="icon-badge small">
-                  <Icon name="lock" />
-                </div>
-                <h3>Cumplimiento</h3>
-              </div>
-              <p>Protege la informacion institucional conforme a lineamientos de seguridad y datos personales.</p>
-            </article>
-          </div>
         </div>
       ),
     },
@@ -493,8 +483,8 @@ function App() {
                   <h3>Panorama del stack</h3>
                 </div>
                 <p>
-                  La solucion se apoya en tres frentes: backend para la logica del sistema,
-                  frontend para la experiencia de uso y datos para la administracion e infraestructura.
+                  La solucion se divide en backend, frontend y datos para una arquitectura
+                  clara y escalable.
                 </p>
               </div>
               <div className="tech-badges">
@@ -568,17 +558,17 @@ function App() {
       ),
     },
     {
-      id: 'modulos',
-      label: 'Modulos',
+      id: 'modulos-acceso',
+      label: 'Acceso',
       eyebrow: 'Operacion principal',
-      title: 'Modulos del sistema',
-      subtitle: 'Componentes funcionales para control de ingreso, supervision, seguridad y administracion.',
+      title: 'Modulos de acceso',
+      subtitle: 'Funciones que validan, autorizan y registran el ingreso peatonal.',
       content: (
-        <div className="modules-slide slide-stack">
+        <div className="modules-slide slide-stack focused-slide">
           <section className="modules-group slide-enter">
             <div className="modules-group-title">
               <span>Operacion de acceso</span>
-              <p>Funciones que intervienen directamente en la validacion, autorizacion y control de ingreso.</p>
+              <p>Validacion, autorizacion y control de ingreso.</p>
             </div>
             <div className="modules-grid primary">
               {modules.slice(0, 4).map((item, index) => (
@@ -594,10 +584,21 @@ function App() {
               ))}
             </div>
           </section>
-          <section className="modules-group slide-enter slide-delay-1">
+        </div>
+      ),
+    },
+    {
+      id: 'modulos-supervision',
+      label: 'Supervision',
+      eyebrow: 'Operacion principal',
+      title: 'Supervision y control',
+      subtitle: 'Funciones para monitorear eventos, revisar historiales y tomar decisiones.',
+      content: (
+        <div className="modules-slide slide-stack focused-slide">
+          <section className="modules-group slide-enter">
             <div className="modules-group-title">
               <span>Supervision y administracion</span>
-              <p>Funciones orientadas a monitoreo, analitica y control institucional del sistema.</p>
+              <p>Monitoreo, analitica y control institucional.</p>
             </div>
             <div className="modules-grid secondary">
               {modules.slice(4).map((item, index) => (
@@ -617,17 +618,17 @@ function App() {
       ),
     },
     {
-      id: 'datos',
-      label: 'Datos',
+      id: 'datos-identidad',
+      label: 'Identidad',
       eyebrow: 'Datos y control',
-      title: 'Estructura de base de datos e informacion',
-      subtitle: 'La plataforma almacena entidades y variables clave para control historico y trazabilidad.',
+      title: 'Datos de identidad y acceso',
+      subtitle: 'Tablas principales para personas, roles, visitantes y movimientos.',
       content: (
-        <div className="data-slide slide-stack">
+        <div className="data-slide slide-stack focused-slide">
           <section className="data-group slide-enter">
             <div className="data-group-title">
               <span>Identidad y acceso</span>
-              <p>Tablas que soportan los perfiles de usuario, roles y movimientos de ingreso.</p>
+              <p>Perfiles, roles y movimientos de ingreso.</p>
             </div>
             <div className="data-grid primary">
               {databaseTables.slice(0, 4).map((table, index) => (
@@ -638,10 +639,21 @@ function App() {
               ))}
             </div>
           </section>
-          <section className="data-group slide-enter slide-delay-1">
+        </div>
+      ),
+    },
+    {
+      id: 'datos-seguridad',
+      label: 'Infraestructura',
+      eyebrow: 'Datos y control',
+      title: 'Datos de seguridad e infraestructura',
+      subtitle: 'Tablas para dispositivos, alertas, auditoria y configuracion.',
+      content: (
+        <div className="data-slide slide-stack focused-slide">
+          <section className="data-group slide-enter">
             <div className="data-group-title">
               <span>Infraestructura y seguridad</span>
-              <p>Tablas orientadas a dispositivos, alertas, auditoria y configuracion operativa.</p>
+              <p>Dispositivos, alertas, auditoria y configuracion.</p>
             </div>
             <div className="data-grid secondary">
               {databaseTables.slice(4).map((table, index) => (
@@ -656,11 +668,31 @@ function App() {
       ),
     },
     {
-      id: 'seguridad',
-      label: 'Seguridad',
+      id: 'workbench',
+      label: 'Workbench',
+      eyebrow: 'Modelo de datos',
+      title: 'Modelo en MySQL Workbench',
+      subtitle: 'Relaciones principales de la base de datos.',
+      layout: 'image',
+      content: (
+        <div className="workbench-slide slide-stack workbench-only">
+          <div className="workbench-title slide-enter">
+            <span>Modelo de datos</span>
+            <h2>MySQL Workbench</h2>
+            <p>Relaciones principales de la base de datos.</p>
+          </div>
+          <article className="workbench-frame slide-enter">
+            <img src={workbenchFit} alt="Vista del modelo en MySQL Workbench" />
+          </article>
+        </div>
+      ),
+    },
+    {
+      id: 'requisitos',
+      label: 'Requisitos',
       eyebrow: 'Criterios del proyecto',
-      title: 'Requisitos, reportes y seguridad',
-      subtitle: 'El sistema combina funciones operativas, rendimiento institucional y proteccion de la informacion.',
+      title: 'Requisitos del sistema',
+      subtitle: 'Lo que debe hacer la plataforma y las condiciones para funcionar bien.',
       content: (
         <div className="security-slide slide-stack">
           <section className="security-top slide-enter">
@@ -705,7 +737,18 @@ function App() {
               </div>
             </article>
           </section>
-          <section className="security-bottom slide-enter slide-delay-1">
+        </div>
+      ),
+    },
+    {
+      id: 'seguridad',
+      label: 'Seguridad',
+      eyebrow: 'Criterios del proyecto',
+      title: 'Seguridad y proteccion de datos',
+      subtitle: 'Controles para proteger informacion, credenciales y eventos del sistema.',
+      content: (
+        <div className="security-slide slide-stack focused-slide">
+          <section className="security-bottom slide-enter">
             <article className="mini-card security-core">
               <div className="card-heading">
                 <div className="icon-badge small">
@@ -714,10 +757,10 @@ function App() {
                 <h3>Controles de seguridad</h3>
               </div>
               <ul className="feature-list">
-                <li>Autenticacion segura con gestion de roles y permisos.</li>
-                <li>Cifrado de informacion sensible y resguardo de credenciales.</li>
-                <li>Conexiones seguras mediante HTTPS y validaciones de acceso.</li>
-                <li>Auditoria de eventos, evidencias y cumplimiento institucional.</li>
+                <li>Roles y permisos.</li>
+                <li>Credenciales protegidas.</li>
+                <li>Conexiones seguras.</li>
+                <li>Auditoria de eventos.</li>
               </ul>
             </article>
             <article className="mini-card">
@@ -728,8 +771,7 @@ function App() {
                 <h3>Proteccion de datos</h3>
               </div>
               <p>
-                Resguarda informacion personal, institucional y registros historicos del ingreso
-                mediante controles de acceso, manejo responsable de datos y trazabilidad de uso.
+                Resguardo de informacion personal e institucional.
               </p>
             </article>
             <article className="mini-card">
@@ -740,8 +782,7 @@ function App() {
                 <h3>Monitoreo y reportes</h3>
               </div>
               <p>
-                Permite seguimiento de eventos, intentos fallidos, analisis de comportamiento
-                operativo y generacion de evidencia para toma de decisiones.
+                Seguimiento de eventos, intentos fallidos e indicadores.
               </p>
             </article>
           </section>
@@ -749,11 +790,11 @@ function App() {
       ),
     },
     {
-      id: 'cierre',
-      label: 'Cierre',
-      eyebrow: 'Proyeccion',
-      title: 'Dashboards, mejoras y conclusion',
-      subtitle: 'El sistema esta preparado para crecer con nuevas integraciones y analitica avanzada.',
+      id: 'reportes',
+      label: 'Reportes',
+      eyebrow: 'Analitica',
+      title: 'Dashboards y crecimiento',
+      subtitle: 'La informacion registrada se convierte en indicadores y nuevas oportunidades.',
       content: (
         <div className="closing-stack">
           <div className="two-column compact-grid slide-stack">
@@ -762,7 +803,7 @@ function App() {
                 <div className="icon-badge">
                   <Icon name="chart" />
                 </div>
-                <h3>Dashboards y reportes</h3>
+                <h3>Reportes clave</h3>
               </div>
               <ul className="feature-list">
                 {reports.map((item) => (
@@ -775,7 +816,7 @@ function App() {
                 <div className="icon-badge">
                   <Icon name="sync" />
                 </div>
-                <h3>Escalabilidad futura</h3>
+                <h3>Mejoras futuras</h3>
               </div>
               <ul className="feature-list">
                 {futureImprovements.map((item) => (
@@ -784,12 +825,23 @@ function App() {
               </ul>
             </article>
           </div>
-          <section className="closing slide-enter slide-delay-2">
+        </div>
+      ),
+    },
+    {
+      id: 'cierre',
+      label: 'Cierre',
+      eyebrow: 'Proyeccion',
+      title: 'Conclusion',
+      subtitle: 'A.I.P. fortalece el control institucional con automatizacion, seguridad y datos claros.',
+      content: (
+        <div className="closing-stack">
+          <section className="closing final-closing slide-enter">
             <p className="eyebrow">Conclusion</p>
             <h2>Automatiza el ingreso, fortalece la seguridad y aporta informacion para decidir</h2>
             <p>
-              A.I.P. es una solucion integral para el control de acceso institucional del SENA,
-              combinando automatizacion, seguridad, integracion fisica y analitica estrategica.
+              A.I.P. integra automatizacion, seguridad, dispositivos fisicos y analitica
+              para mejorar el control institucional.
             </p>
           </section>
         </div>
@@ -896,7 +948,7 @@ function App() {
 
         <article
           key={currentSlide.id}
-          className={`slide-card ${currentSlide.layout === 'hero' ? 'hero-slide' : ''} slide-shift-${transitionDirection}`}
+          className={`slide-card ${currentSlide.layout === 'hero' ? 'hero-slide' : ''} ${currentSlide.layout === 'image' ? 'image-slide' : ''} slide-shift-${transitionDirection}`}
           onPointerMove={handlePointerMove}
           onTouchStart={handleTouchStart}
           onTouchEnd={handleTouchEnd}
@@ -908,7 +960,7 @@ function App() {
             <span className="map-grid-bg" />
             <span className="map-spotlight" />
           </div>
-          {currentSlide.layout !== 'hero' && (
+          {currentSlide.layout !== 'hero' && currentSlide.layout !== 'image' && (
             <SectionTitle
               eyebrow={currentSlide.eyebrow}
               title={currentSlide.title}
