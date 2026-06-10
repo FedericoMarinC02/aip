@@ -13,6 +13,8 @@ import workbenchLogo from './imgs/mysql workbench.png';
 import workbenchFit from './imgs/workbench-fit.png';
 import phpMyAdminLogo from './imgs/PhpMyAdmin.png';
 import apacheLogo from './imgs/apache.png';
+import railwayLogo from './imgs/railway.png';
+import tableplus from './imgs/tableplus.png';
 
 const quickStats = [
   { icon: 'users', value: 'Multiacceso', label: 'usuarios y visitantes' },
@@ -59,6 +61,8 @@ const technologies = [
       { label: 'MySQL Workbench', logo: workbenchLogo, alt: 'MySQL Workbench' },
       { label: 'phpMyAdmin', logo: phpMyAdminLogo, alt: 'phpMyAdmin' },
       { label: 'Apache o Nginx', logo: apacheLogo, alt: 'Apache' },
+      { label: 'Railway', logo: railwayLogo, alt: 'Railway' },
+      { label: 'TablePlus', logo: tableplus, alt: 'TablePlus' },
     ],
   },
 ];
